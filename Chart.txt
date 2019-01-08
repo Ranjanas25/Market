@@ -1,0 +1,31 @@
+
+************************************************
+
+ private void Chart3DActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        String temperature =temp.getText();
+        String volume =vol.getText();
+        String rainfall = rain.getText();
+        String kilos = kilo.getText();
+        String hights = hight.getText();
+                
+        //String RSpeed   = Rspeed.getText();
+        DefaultPieDataset pieDataset = new DefaultPieDataset();
+        pieDataset.setValue("Temperature", new Double (temperature));
+        pieDataset.setValue("Volume", new Double(volume));
+        pieDataset.setValue("Rainfall", new Double(rainfall));
+        pieDataset.setValue("Kilometers", new Double(kilos));
+        pieDataset.setValue("Hight", new Double(hights));
+        
+       // pieDataset.setValue("RotationalSpeed", new Double(RSpeed));
+        
+        JFreeChart chart = ChartFactory.createPieChart3D("pie chart",pieDataset,true,true,true);
+       
+        PiePlot3D r = (PiePlot3D)chart.getPlot();
+                
+        PiePlot3D p = (PiePlot3D)chart.getPlot();
+        ChartFrame frame = new ChartFrame ("pie chart",chart);
+        frame.setVisible(true);
+        frame.setSize(450,500);
+    }                                       
+
+    /**
