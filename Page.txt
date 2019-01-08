@@ -3,7 +3,8 @@ This is my webpage
 <head>Page about Himalayas</head>
 
 <body>Himalayas are very beautiful. Many himalayas are located in Nepal.
-Mt.Everest is the highest peak of the world and it is also located in Nepal.
+Mt.Everest is the highest peak of the world and it is located in Nepal. 
+So Nepal is far from the sea level but has many beautiful rivers.
 
 </body>
 </html>
